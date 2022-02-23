@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet" />
+    <title>Sum of Positive</title>
+</head>
+<body>
+    <div class="parentSumPos">
+        <div class="title-areaSumPos">
+            <div id="title-boxSumPos">
+                <a href="https://www.codewars.com/kata/5715eaedb436cf5606000381" style="text-decoration: none;" target="_blank" rel="noopener"> 
+                    <h2 class="sumPos">Sum of Positive</h2>
+                </a>
+            </div>
+
+
+        </div>
+        <div class="imgSumPosArea">
+            <a href="https://www.codewars.com/kata/5715eaedb436cf5606000381" style="text-decoration: none;" target="_blank" rel="noopener"> 
+                <img id="imgSumPosPic" src="assets/01- sum_of_pos-Med.png" alt="Sum of Positive">
+            </a>
+        </div>
+        <div class="sumInfoArea">
+            <h6>
+                <pre>
+You get an array of numbers, return the sum of all of the positives ones.
+
+Example [1,-4,7,12] => 1 + 7 + 12 = 20
+
+Note: if there is nothing to sum, the sum is default to 0.</pre>
+            </h6>
+        </div>
+        <h3 class="code">THE CODE ...</h3>    
+        <div class="code-Area">
+            <div id="theCode">
+                <h5 class="sumCode">
+<pre>function positiveSum(arr, num) {
+    let sum = 0;
+    for (let i of arr) {
+        if (i>0) {
+            sum += i
+        }
+    }
+    if (sum === num){
+        return console.log("Correct " + sum + " = " + num);
+    } else {
+        return console.log("Incorrect " + sum + " does not equal " + num);
+    }
+}
+
+positiveSum([1,2,3,4,5], 15);
+positiveSum([1,-2,3,4,5], 13);
+positiveSum([1,1], 2);
+positiveSum([-1,-2,-3,-4,-5],0);
+positiveSum([-1,2,3,4,-5],9);</pre>
+                </h5>
+            </div>
+        </div>
+        <div id="button-area">
+            <a id="copyButton" onClick="myFunction()"><div id="sum-of-positive">      
+                <h4 >Copy Code</h4></div>
+            </a>
+            <a href="https://onecompiler.com/javascript/3xu7mafgr" style="text-decoration: none;" target="_blank" rel="noopener"><div id="sum-of-positive">      
+                <h4 >Run Code</h4></div></a> 
+            </a>
+        </div> 
+
+    </div>
+
+    <script>
+        function myFunction() {
+          /* Copy the text inside the text field */
+          navigator.clipboard.writeText('function positiveSum(arr, num) { \nlet sum = 0; \nfor (let i of arr) { \nif (i>0) { \nsum += i \n} \n} \nif (sum === num){ \nreturn console.log("Correct " + sum + " = " + num); \n} else { \nreturn console.log("Incorrect " + sum + " does not equal " + num);\n} \n} \npositiveSum([1,2,3,4,5], 15); \npositiveSum([1,-2,3,4,5], 13);\npositiveSum([1,1], 2); \npositiveSum([-1,-2,-3,-4,-5],0); \npositiveSum([-1,2,3,4,-5],9);');
+        }
+        </script>
+    
+</body>
+</html>

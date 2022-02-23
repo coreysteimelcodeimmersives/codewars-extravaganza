@@ -1,0 +1,151 @@
+@font-face {
+    font-family: 'Star Wars';
+    src: url(assets/starjedi/Starjedi.ttf);
+}
+@font-face {
+    font-family: 'Star Wars hallow';
+    src: url(assets/SfDistantGalaxyOutline-xoeO.ttf);
+}
+
+body {
+    background-image: url(assets/starBackGround.jpeg);
+}
+
+.title-area{
+    margin-top: 200px;
+    width:auto;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+
+}
+
+#title-box{
+    width: fit-content;
+    height:auto;
+}
+
+h1{
+    color: goldenrod;
+    font-family: Star Wars hallow;
+    font-size: 12em;
+    text-align: center;
+}
+
+.title-areaSumPos{
+    margin-top: -100px;
+    width: auto;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+
+#title-boxSumPos{
+    width: fit-content;
+    height: fit-content;
+}
+
+h2{
+    color: goldenrod;
+    font-family: Star Wars;
+    font-size: 6em;
+    text-align: center;
+}
+
+.sub-text-area{
+    width: auto;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+}
+
+#sub-text-box{
+    width: fit-content;
+    height: auto;
+}
+
+.code{
+    margin-bottom: -145px;
+}
+
+.wars{
+    margin-bottom: -50px;
+}
+
+h3{
+    text-align: center;
+    color: white;
+    font-family: Lora;
+    font-size: 2.6em; 
+    letter-spacing: 10px;
+}
+
+#sum-of-positive{
+    width: fit-content;
+}
+
+h4{
+    text-align: center;
+    font-family: Star Wars;
+    color: white;
+    font-size: 1em;
+    background-color: goldenrod;
+    border-radius: 25px;
+    width: 200px;
+    cursor: pointer; 
+}
+
+.imgSumPosArea{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#imgSumPosPic{
+    margin-top: -95px;
+    height: calc(100vh - 350px);
+    width: auto;
+    border-radius: 25px;
+}
+
+.sumInfoArea{
+    height: fit-content;
+    margin: 0px;
+    padding: 0px;
+    margin-top: -15px;
+}
+
+h6{
+    padding: 0px;
+    font-family: Lora;
+    color: goldenrod;
+    font-size: 1.8em;
+    margin-left: 50px;
+    margin-top: 0px;
+}
+
+.code-Area{
+    width: auto;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+.code{
+    margin-top: -55px;
+}
+
+#theCode{
+    margin-top: -25px;
+    width: fit-content;
+    height: fit-content;
+}
+
+h5{
+    margin-top: 175px;
+    font-family: Lora;
+    font-size: 2em; 
+    color: skyblue;
+}
