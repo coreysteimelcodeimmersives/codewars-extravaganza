@@ -158,36 +158,36 @@
 // accum("RqaEzty") -> "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
 // accum("cwAt") -> "C-Ww-Aaa-Tttt"
 
-// accum("abcd");
+accum("abcd");
 
-// function accum(s) {
-// 	let strX = '';
-//     for (let i = 0; i < s.length; i++){
-//         if (i === s.length - 1){
-//             for (let y = 0; y < i + 1; y++){
-//                 if (y === 0){
-//                     strX = strX + s[i].toUpperCase();
-//                 } else {
-//                     strX = strX + s[i].toLowerCase();
-//                 }
-//             }
-//         } else {
-//             for (let x = 0; x < i + 2; x++){
-//                 if (x === 0){
-//                     strX = strX + s[i].toUpperCase();
-//                 } else if (x < i + 1) {
-//                     strX = strX + s[i].toLowerCase();
-//                 } else {
-//                     strX = strX + '-'
-//                 }
+function accum(s) {
+	let strX = '';
+    for (let i = 0; i < s.length; i++){
+        if (i === s.length - 1){
+            for (let y = 0; y < i + 1; y++){
+                if (y === 0){
+                    strX = strX + s[i].toUpperCase();
+                } else {
+                    strX = strX + s[i].toLowerCase();
+                }
+            }
+        } else {
+            for (let x = 0; x < i + 2; x++){
+                if (x === 0){
+                    strX = strX + s[i].toUpperCase();
+                } else if (x < i + 1) {
+                    strX = strX + s[i].toLowerCase();
+                } else {
+                    strX = strX + '-'
+                }
                 
-//             }
+            }
 
-//         }
+        }
         
-//     }
-//     return strX;
-// }
+    }
+    return strX;
+}
 
 // pigIt('Pig latin is cool'); // igPay atinlay siay oolcay
 // pigIt('Hello world !');     // elloHay orldway !
@@ -406,51 +406,51 @@
 // highLow(num);
 
 // function highLow(num){
-    let myArray = num.split(" ");
-    console.log (myArray);
+    // let myArray = num.split(" ");
+    // console.log (myArray);
 
-    let high = myArray[0];
-    let low = myArray[0];
+    // let high = myArray[0];
+    // let low = myArray[0];
 
-    for(let i = 1; i < myArray.length - 1; i++){
-        // high compare
-        if (Number(myArray[i]) > high){
-            high = myArray[i];
-        }
-        if (Number(myArray[i]) < low){
-            low = myArray[i];
-        }
-    }
-    return high + " " + low;
+    // for(let i = 1; i < myArray.length - 1; i++){
+    //     // high compare
+    //     if (Number(myArray[i]) > high){
+    //         high = myArray[i];
+    //     }
+    //     if (Number(myArray[i]) < low){
+    //         low = myArray[i];
+    //     }
+    // }
+    // return high + " " + low;
 // }
 
 // pigIt('Pig latin is cool'); // igPay atinlay siay oolcay
 // pigIt('Hello world !');     // elloHay orldway !
 
-pigIt('Pig latin is cool')
+// pigIt('Pig latin is cool')
 
-pigIt('Hello world !');
+// pigIt('Hello world !');
 
-function pigIt(str){
-    let mySentenceArray = str.split(" ");
-    console.log(mySentenceArray);
+// function pigIt(str){
+//     let mySentenceArray = str.split(" ");
+//     console.log(mySentenceArray);
 
-    let firstLetter = '';
-    let endWord = '';
-    let pigLatin = '';
-    let sentence = '';
+//     let firstLetter = '';
+//     let endWord = '';
+//     let pigLatin = '';
+//     let sentence = '';
 
-    for (let i = 0; i < mySentenceArray.length; i++){
+//     for (let i = 0; i < mySentenceArray.length; i++){
         
-        if (mySentenceArray[i] === '!' || mySentenceArray[i] === '.' || mySentenceArray[i] === '?' || mySentenceArray[i] === '?'){
-            // mySentenceArray[i] = mySentenceArray[i];
-        }  else {
-            firstLetter = mySentenceArray[i].slice(0,1);
-            endWord = mySentenceArray[i].slice(1);
-            pigLatin = endWord + firstLetter + "ay"
-            mySentenceArray[i] = pigLatin; 
-            console.log(mySentenceArray);            
-        }  
+//         if (mySentenceArray[i] === '!' || mySentenceArray[i] === '.' || mySentenceArray[i] === '?' || mySentenceArray[i] === '?'){
+//             // mySentenceArray[i] = mySentenceArray[i];
+//         }  else {
+//             firstLetter = mySentenceArray[i].slice(0,1);
+//             endWord = mySentenceArray[i].slice(1);
+//             pigLatin = endWord + firstLetter + "ay"
+//             mySentenceArray[i] = pigLatin; 
+//             console.log(mySentenceArray);            
+//         }  
 
 
         // console.log(mySentenceArray[i]);
@@ -465,11 +465,11 @@ function pigIt(str){
         //     console.log('does it go in here?')
         //     mySentenceArray[i] = mySentenceArray[i];       
         // }  
-    }
-    sentence = mySentenceArray.join(" ");
-    console.log(sentence);
-    return sentence;  
-}
+//     }
+//     sentence = mySentenceArray.join(" ");
+//     console.log(sentence);
+//     return sentence;  
+// }
 
 
 
@@ -525,3 +525,13 @@ function pigIt(str){
 //     }
 //     return sentence;
 //   }
+
+// let myArray = ['a', 'b', 'c', '!', '?', '.', ','];
+
+// for (let i = 0; i < myArray.length; i++){
+//     if (myArray[i] !== '!' && myArray[i] !== '?' && myArray[i] !== '.' && myArray[i] !== ','){
+//         console.log(true + " " + myArray[i] + " is not equal to ! and ? and . and ,");
+//     } else {
+//         console.log(false + " " + myArray[i] + " is equal to ! or ? or . or , or all of them")
+//     }
+// }
