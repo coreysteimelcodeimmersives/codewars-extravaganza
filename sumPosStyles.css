@@ -1,0 +1,51 @@
+.title-areaSumPos{
+    margin-top: -100px;
+    width: auto;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+
+#title-boxSumPos{
+    width: fit-content;
+    height: fit-content;
+}
+
+.imgSumPosArea{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#imgSumPosPic{
+    margin-top: -90px;
+    height: calc(100vh - 350px);
+    width: auto;
+    border-radius: 25px;
+}
+
+.sumInfoArea{
+    height: fit-content;
+    margin: 0px;
+    padding: 0px;
+    margin-top: -10px;
+}
+
+.code-Area{
+    width: auto;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+.code{
+    margin-top: -50px;
+}
+
+#theCode{
+    margin-top: -200px;
+    width: fit-content;
+    height: fit-content;
+}

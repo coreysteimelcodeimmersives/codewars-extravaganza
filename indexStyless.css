@@ -1,0 +1,38 @@
+.title-area{
+    margin-top: 200px;
+    width:auto;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+
+}
+
+#title-box{
+    width: fit-content;
+    height:auto;
+}
+
+.code{
+    margin-bottom: -145px;
+}
+
+.wars{
+    margin-bottom: -50px;
+}
+
+.sub-text-area{
+    width: auto;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+}
+
+#sub-text-box{
+    width: fit-content;
+    height: auto;
+}
+
+#sum-of-positive{
+    width: fit-content;
+}
+
