@@ -39,7 +39,7 @@ Note: if there is nothing to sum, the sum is default to 0.</pre>
         <h3 class="code">THE CODE ...</h3>    
         <div class="code-Area">
             <div id="theCode">
-                <h5 class="sumCode">
+                <h5 id="sumCode">
 <pre>function positiveSum(arr, num) {
     let sum = 0;
     for (let i of arr) {
@@ -63,7 +63,7 @@ positiveSum([-1,2,3,4,-5],9);</pre>
             </div>
         </div>
         <div id="button-area">
-            <a id="copyButton" onClick="myFunction()"><div id="copyCodeButton">      
+            <a id="copyButton" onClick="myFunction(); alert(`The Code is copied.`)"><div id="copyCodeButton">      
                 <h4 >Copy Code</h4></div>
             </a>
             <a href="https://onecompiler.com/javascript/3xu98ddyb" style="text-decoration: none;" target="_blank" rel="noopener"><div id="runCodeButton">      
@@ -75,8 +75,7 @@ positiveSum([-1,2,3,4,-5],9);</pre>
 
     <script>
         function myFunction() {
-          /* Copy the text inside the text field */
-          navigator.clipboard.writeText('function positiveSum(arr, num) { \nlet sum = 0; \nfor (let i of arr) { \nif (i>0) { \nsum += i \n} \n} \nif (sum === num){ \nreturn console.log("Correct " + sum + " = " + num); \n} else { \nreturn console.log("Incorrect " + sum + " does not equal " + num);\n} \n} \npositiveSum([1,2,3,4,5], 15); \npositiveSum([1,-2,3,4,5], 13);\npositiveSum([1,1], 2); \npositiveSum([-1,-2,-3,-4,-5],0); \npositiveSum([-1,2,3,4,-5],9);');
+            navigator.clipboard.writeText('function positiveSum(arr, num) { \nlet sum = 0; \nfor (let i of arr) { \nif (i>0) { \nsum += i \n} \n} \nif (sum === num){ \nreturn console.log("Correct " + sum + " = " + num); \n} else { \nreturn console.log("Incorrect " + sum + " does not equal " + num);\n} \n} \npositiveSum([1,2,3,4,5], 15); \npositiveSum([1,-2,3,4,5], 13);\npositiveSum([1,1], 2); \npositiveSum([-1,-2,-3,-4,-5],0); \npositiveSum([-1,2,3,4,-5],9);');
         }
         </script>
     
