@@ -36,3 +36,12 @@
     width: fit-content;
 }
 
+#button-area{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 50px;
+    margin-top: -10px;
+
+}
